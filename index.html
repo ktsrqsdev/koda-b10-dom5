@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Password Field</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <label>
+        <input type="password" autocomplete="current-password">
+
+        <button type="button" data-status="closed">
+            <span>Show password</span>
+            <img src="closed.svg" alt="Show password" aria-hidden="true">
+        </button>
+    </label>
 </body>
 </html>
